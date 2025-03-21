@@ -1,30 +1,30 @@
-# Meta Ads API Tutorial
+# Procesador de Datos de Campañas
 
-Este proyecto es un tutorial paso a paso para aprender a usar la API de Meta Ads (Facebook Ads).
+Este script procesa datos de campañas publicitarias desde archivos CSV.
 
 ## Requisitos previos
 
-- Python 3.8 o superior
-- Cuenta de desarrollador de Meta
-- Cuenta de anuncios de Meta
-- Token de acceso de la API de Meta
+-Tener una cuenta publicitaria en Meta Ads de donde extraer tus datos de campaña.
 
 ## Configuración
 
-1. Instalar las dependencias:
+1. Instalar las dependencias (linea a linea en la terminal):
 ```bash
-pip install -r requirements.txt
+python3 -m venv venv
+source venv/bin/activate
+pip install pandas openpyxl
+python3 meta_ads_import.py
+
 ```
 
-2. Crear un archivo `.env` con tus credenciales:
-```
-META_ACCESS_TOKEN=tu_token_de_acceso
-META_AD_ACCOUNT_ID=tu_id_de_cuenta
-```
+2. Descargar archivo csv de la campaña publicitaria.
 
 ## Uso
 
-Ejecutar el script principal:
+1. Coloca tu archivo CSV con el nombre 'datos_campanas.csv' o el nombre que desees (hay que modificar la funcion main en meta_ads_import.py) en el directorio campanas.
+
+2. Ejecuta el script:
 ```bash
 python meta_ads_import.py
 ```
+El script generará un nuevo archivo CSV con los datos procesados.

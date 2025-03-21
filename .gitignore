@@ -1,0 +1,31 @@
+# Archivo de variables de entorno
+.env
+
+# Entorno virtual
+.venv/
+venv/
+ENV/
+
+# Archivos generados por Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Archivos de datos generados
+meta_ads_data_*.csv
+campanas/
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+
+# Archivos de IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Archivos de distribución
+dist/
+build/
+*.egg-info/ 
